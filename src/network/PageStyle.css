@@ -1,0 +1,275 @@
+*{margin:0; padding:0;}
+body{height:100%; overflow:auto;}
+.network{
+    width: 100%;
+    height:100%;
+    display: block;
+}
+
+.network_left{
+    width:50%;
+    height:100%;
+    float:left;
+    display:block;
+    position:fixed;
+    overflow:auto;
+    border-right:3px solid gray;
+    z-index:2;
+}
+.network_left::-webkit-scrollbar{display:none;}
+
+#logo{width:50%; margin-top:3em; margin-left:15%; font-size:2em;} /* 좌측 로고부분 108874 */
+#logo img{width:5em; height:3em;}
+#info{width:80%; height:7em; margin-top:2em; margin-left:20%; font-size:2em;} /*프로필부분 배경*/
+#info ul{width:100%;}
+#info_li_1{float:left; width:5em;}
+#info_li_2{float:left; width:17em;}
+#profile{width:8em; height:9em; border-radius:20px;} /* 이미지 */
+#profile img{width:100%; height:100%; border-radius:20px;}
+#info p{margin-top:3%;}
+#info_text{word-break:break-all; font-size:80%;}
+#btns{width:100%; height:20em; margin-top:4em; background:#ffffff;} /*좌측 하단*/
+/* public network and create button style */
+.bm_lo{width:60%; margin-left:20%;}
+.bm_sh1{width:28%; margin-left:20%;}
+.bm_sh2{width:28%; margin-left:4%;}
+#help{margin-left:48%; text-align:center; cursor:pointer;}
+#btn_main{
+    background: #89BCBD    /*#AED4D2 #257790 #AED4D2*/;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    position: relative;
+    height: 30%;
+    font-size: 1.6em;
+    text-align: center;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+}
+#btn_main:hover{
+    background:#ffffff;
+    color:#528C98/*#257790 #108874*/;
+}
+#btn_main:before, #btn_main:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: teal;
+    transition:400ms ease all;
+}
+#btn_main:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+#btn_main:hover:before, #btn_main:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+
+.network_right{width:50%; height:100%; float:right; background: #ffffff;} /* 020d25 우측 배경*/
+#search{width:50%; height:8em; position:fixed; z-index:1; background:#ffffff;}
+#search input{float:left; width:15em; height:1.5em; margin-left:2em; margin-top:2.5em; padding:10px; font-size:1.2em; outline:none; border:4px solid teal; border-right:none; border-radius:3px;}
+#clr_search{float:left; width:3em; height:1.95em; padding:9px; margin-left:-2em; margin-top:3em; border:4px solid teal; border-left:none; border-radius:3px;}
+#clr_search button{width:3em; height:2em; outline:none; cursor:pointer; border:none; border-left:3px solid teal; background:white;}
+#btn_net_clr{width:5em; height:3.5em; float:right; margin-top:3em; margin-right:5em; border-radius:10px; border:none; cursor:pointer; background:rgb(139, 194, 194);}
+#btn_net_clr:hover{background:rgb(168, 212, 212);}
+#nets{width:100%; height:100%; margin-top:9%;}
+#nets::-webkit-scrollbar{width:6px; background:none;}
+#nets::-webkit-scrollbar-thumb{border-radius:10px; background:black;}
+/* private network css */
+#net{
+    width: 80%;
+    height: 6rem;
+    margin: 0 2rem 4rem 2rem;
+    transform: translate(10%,30%);
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    letter-spacing: 0.1em;
+    color: #e8e8e8;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: #72AAB2/*#72AAB2 #68A3AB*/;
+    /*background: linear-gradient(45deg,#d350db,teal,#d350db);*/
+    background-size: 400% 400%;
+    box-shadow: 1vw 1vw 0 #AED4D2/*rgb(235, 149, 149)*/;
+    transition: all 0.3s ease;
+}
+#net:hover{
+    animation: gradient 10s ease infinite;
+    font-size: 1.7rem;
+    box-shadow: 0.2vw 0.2vw 0 #AED4D2/*lightcoral*/;
+}
+#net_t1{float:left; font-size:2.3em; margin-left:1em;}
+#net_t2{float:left; font-size:1.5em; margin-left:2em;}
+#sel_net{width:90%; height:100%; outline:none; border:none; border-radius:10px 0 0 10px; cursor:pointer; background:#72AAB2;}
+#sel_net:hover{background:#92bac0;}
+#sel_net_opt{float:right; width:10%; height:100%; outline:none; border:none; border-radius:0 10px 10px 0; border-left:5px solid #2a96a7; cursor:pointer; background:#72AAB2;}
+#sel_net_opt:hover{background:#92bac0;}
+#sel_net_opt img{width:60%; height:30%;}
+#sel_net_del{float:right; width:30%; height:2.5em; border:1px solid black; cursor:pointer; background:white;}
+#sel_net_del:hover{background:rgb(216, 216, 216);}
+
+
+/* sub network menu : network create or add */
+#subcontent_net{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(4px) grayscale(0.4);
+    z-index: 10;
+}
+#subcontent_net-1{
+    position: fixed;
+    width: 30em;
+    height: 20em;
+    left: 50%;
+    top: 50%;
+    margin-left: -15em;
+    margin-top: -10em;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: white;
+}
+#subcontent_net-2{
+    margin-top: 1.5em;
+    font-size: 1.5em;
+}
+#subcontent_net-2 p{ text-align:center; margin-bottom: 2em; }
+#subcontent_net-2 input{ width:14.5em; height:1.5em; margin-left:2em; margin-top: 1em; }
+#subcontent_net-2 #end{
+    width: 6em;
+    height: 2.5em;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10em;
+    margin-top: 2em;
+    color: #ffffff;
+    cursor: pointer;
+    background: #89BCBD;
+}
+#random{float:right; margin-top:0.5em; margin-right:2em; height:1.8em; width:7em; border:2px solid black; border-radius:10px; background:white;}
+#random:hover{background:rgb(195, 240, 236);}
+#x_btn{
+    float: right;
+    width: 1.3em;
+    height: 1.3em;
+    margin-right: 1em;
+    margin-top: 1em;
+    border: none;
+    background: white;
+}
+#x_btn:hover{
+    background: gray;
+}
+
+
+/* sub mail menu : show mail list */
+#subcontent_mail{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(4px) grayscale(0.4);
+    z-index: 10;
+}
+#subcontent_mail-1{
+    position: fixed;
+    width: 30em;
+    height: 40em;
+    left: 50%;
+    top: 50%;
+    margin-left: -15em;
+    margin-top: -20em;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: white;
+}
+#subcontent_mail-1 #p_title{
+    margin-top: 1.5em;
+    font-size: 1.5em;
+    text-align: center;
+}
+#show_mail_list{
+    width: 20em;
+    height: 27em;
+    margin-top: 2em;
+    margin-left: 5em;
+    border: 1px solid black;
+    overflow: auto;
+}
+#new_mail{
+    width: 6em;
+    height: 2.5em;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10.5em;
+    margin-top: 2em;
+    color: #ffffff;
+    cursor: pointer;
+    background: #89BCBD;
+}
+
+
+
+
+/* sub mail add menu : new mail add */
+#subcontent_mail_add{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(4px) grayscale(0.4);
+    z-index: 10;
+}
+#subcontent_mail_add-1{
+    position: fixed;
+    width: 30em;
+    height: 20em;
+    left: 50%;
+    top: 50%;
+    margin-left: -15em;
+    margin-top: -10em;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: white;
+}
+#subcontent_mail_add-2{
+    margin-top: 1.5em;
+    font-size: 1.5em;
+}
+#subcontent_mail_add-2 p{ text-align:center; margin-bottom: 2em; }
+#subcontent_mail_add-2 input{ width:14.5em; height:1.5em; margin-left:2em; margin-top: 1em; }
+#subcontent_mail_add-2 button{
+    width: 6em;
+    height: 2.5em;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10em;
+    margin-top: 2em;
+    color: #ffffff;
+    cursor: pointer;
+    background: #89BCBD;
+}
+
+
+/* mail list style */
+#mail ul{width:20em;}
+#mail ul li{height:3.3em; padding:0.3em; font-size:1.1em; border-bottom:0.5px solid black;}
+#mail_t1{width:16em;}
+#mail_t1 p{height:0.4em; font-size:1.2em; font-weight:bold;}
+#mail_btn1{float:right; width:4em;}
+#mail_remove{margin-top:0.6em; width:30px; height:20px; border:none; cursor:pointer; background:white;}
+#mail_remove:hover{background:rgb(211, 209, 209);}

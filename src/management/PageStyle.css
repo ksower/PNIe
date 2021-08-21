@@ -1,0 +1,239 @@
+.manage{
+    width: 100%;
+}
+
+.manage_left{
+    width:20%;
+    height:100%;
+    display:block;
+    overflow:auto;
+    position:fixed;
+}
+.manage_left::-webkit-scrollbar{display:none;}
+#nav_top{
+    width:100%;
+    height:6em;
+    border-bottom:2px solid gray;
+}
+#end{
+    width:3em;
+    height:3em;
+    margin: 1.5em;
+    margin-left:2em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+}
+#end:hover{background:rgb(231, 230, 230);}
+#end img{width:100%; height:100%;}
+#file_logo{width:6em; height:3em;}
+
+#nav_middle{
+    width:100%;
+    height:10em;
+    border-top:2px solid gray;
+    border-bottom:2px solid gray;
+}
+#nw_info{padding:2em;}
+#nw_info p{font-size:1.2em;}
+#nw_text{word-break:break-all;}
+
+#nav_menu_1, #nav_menu_2{
+    width:100%;
+    padding:1em 0;
+    border-top:2px solid gray;
+}
+#btn_menu{
+    width:70%;
+    height:3em;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+    margin-left:15%;
+    text-align:center;
+    font-size:1em;
+    border-radius:50px;
+    background:white;
+    transition:0.5s;
+}
+#btn_menu:hover{
+    background:gray;
+    color:white;
+}
+
+
+.manage_right{
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    position: fixed;
+    overflow: auto;
+}
+.manage_right::-webkit-scrollbar{display:none;}
+
+
+/* show key for transmitting to group member */
+.k_subcontent{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(4px) grayscale(0.4);
+    z-index: 10;
+}
+#key_show{
+    position: fixed;
+    width: 44em;
+    height: 14em;
+    left: 50%;
+    top: 50%;
+    margin-left: -22em;
+    margin-top: -7em;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: white;
+}
+#x_btn{
+    float: right;
+    width: 1.3em;
+    height: 1.3em;
+    margin-right: 1em;
+    margin-top: 1em;
+    border: none;
+    background: white;
+    z-index: 12;
+}
+#x_btn:hover{
+    background: gray;
+}
+#check_pwd{font-size:1.3em;}
+#check_pwd p{ text-align:center; margin-bottom: 1em; margin-top:2em;}
+#check_pwd input{ width:19em; height:1.5em; padding:0.5em; margin-left:9.5em;}
+#check_pwd button{
+    width: 6em;
+    height: 2.5em;
+    border: none;
+    border-radius: 5px;
+    margin-left: 17em;
+    margin-top: 1em;
+    color: #ffffff;
+    cursor: pointer;
+    background: #89BCBD;
+}
+#show_network_key{text-align:center; margin-top:1em;}
+#show_network_key #snk_1{margin-top:2em;}
+#show_network_key p{margin-top:1em; font-size:1.3em;}
+#show_network_key div{width:26em; padding:0.5em; margin-left:1em; margin-top:1em; font-size:1.5em; border-radius:15px; border:none; background:#b5dbdb;}
+
+
+
+/* sub mail menu : show mail list */
+.m_subcontent{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(4px) grayscale(0.4);
+    z-index: 10;
+}
+#net_mail{
+    position: fixed;
+    width: 30em;
+    height: 40em;
+    left: 50%;
+    top: 50%;
+    margin-left: -15em;
+    margin-top: -20em;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: white;
+}
+#net_mail #mail_title{
+    margin-top: 1.5em;
+    font-size: 1.5em;
+    text-align: center;
+}
+#show_net_mail_list{
+    width: 20em;
+    height: 27em;
+    margin-top: 2em;
+    margin-left: 5em;
+    border: 1px solid black;
+    overflow: auto;
+}
+#add_net_mail{
+    width: 6em;
+    height: 2.5em;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10.5em;
+    margin-top: 2em;
+    color: #ffffff;
+    cursor: pointer;
+    background: #89BCBD;
+}
+
+/* mail list style */
+#t_mail{width:17.4em; height:3.3em; padding:0.3em; font-size:1.1em; border-bottom:0.5px solid black;}
+#t_mail p{height:0.4em; font-size:1.2em; font-weight:bold;}
+
+/* mail add to network */
+.ml_subcontent{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(4px) grayscale(0.4);
+    z-index: 10;
+}
+#net_add_mail{
+    position: fixed;
+    width: 60em;
+    height: 40em;
+    left: 50%;
+    top: 50%;
+    margin-left: -30em;
+    margin-top: -20em;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: white;
+}
+#net_add_mail #net_add_text{
+    margin-top: 1.5em;
+    font-size: 1.5em;
+    text-align: center;
+}
+#list_title_l{float:left; font-size:1.2em; margin-top:2em; margin-left:4em;}
+#list_title_r{float:right; font-size:1.2em; margin-top:2em; margin-right:4em;}
+#add_mail_list ul{width:20em;}
+#add_mail_list ul li{float:left; height:3.3em; padding:0.3em; font-size:1.1em; border-bottom:0.5px solid black;}
+#add_mail_list #chbox{width:2em;}
+#add_mail_list #chbox input{margin-top:1.1em; margin-left:0.6em;}
+#add_mail_list #na_text{width:15em;}
+#add_mail_list #na_text #na_text_1{height:0.4em; font-size:1.2em; font-weight:bold;}
+#m_list{
+    float: left;
+    width: 20em;
+    height: 27em;
+    margin-top: 1em;
+    margin-left: 3.5em;
+    border: 1px solid black;
+    overflow: auto;
+}
+#mail_move{
+    float: left;
+    width: 6em;
+    margin-top: 4em;
+    margin-left: 3.5em;
+}
+#mail_move button{
+    display: block;
+    width: 5.5em;
+    height: 2em;
+    margin-top: 1.5em;
+}
+
+#clear{clear:both;}
