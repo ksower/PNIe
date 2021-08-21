@@ -1,7 +1,7 @@
 # PNIe
 
 This is a program I made for my school graduation work. Please forgive me if the code is hard to understand.   
-This program is a chrome extension. If you search for 'PNIe' in the Chrome Web Store, you can add it to your Chrome and use it.
+This program is a chrome extension. If you search for 'PNIe' in the Chrome Web Store, you can add it to your Chrome and use it.   
 This program may be immature as it is not intended for commercialization.
 
 
