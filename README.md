@@ -35,7 +35,7 @@ Use IPFS comfortably without writing any code.
 
 ## Language
 - Javascript
-- library : react, JS-IPFS
+- library : react, JS-IPFS, email-js, crypto-js
 
 
 ## web store
