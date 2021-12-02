@@ -33,5 +33,10 @@ Use IPFS comfortably without writing any code.
 4. Send the hash code for the file by email
 
 
+## Language
+- Javascript
+- library : react, JS-IPFS
+
+
 ## web store
 https://chrome.google.com/webstore/detail/pnie/lakepcgfdaabjbibneokgppkjacbinfp?hl=ko
