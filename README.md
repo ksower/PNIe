@@ -21,8 +21,9 @@ Although the public network is used, when a file is downloaded, only users belon
 
 ## Main Functions
 1. Upload/download files to IPFS
-2. Network separation through file encryption and decryption
-3. Send the hash code for the file by email
+2. Manage file(hash) list
+3. Network separation through file encryption and decryption
+4. Send the hash code for the file by email
 
 
 ## web store
