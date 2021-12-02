@@ -19,6 +19,13 @@ This had the effect of indirectly distinguishing networks through encryption bef
 Although the public network is used, when a file is downloaded, only users belonging to the group can verify the file contents through decryption.
 
 
+This program does not use a separate server to prevent packets from coming out due to unnecessary communication with the server.
+I thought of a general Windows program, but considering the environment where you can use the Internet through Wi-Fi anywhere, it was developed as a Chrome extension so that it is not limited by hardware.
+
+
+Use IPFS comfortably without writing any code.
+
+
 ## Main Functions
 1. Upload/download files to IPFS
 2. Manage file(hash) list
