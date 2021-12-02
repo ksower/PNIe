@@ -8,7 +8,7 @@ This program may be immature as it is not intended for commercialization.
 ## Intro
 
 This program uses IPFS by default.   
-IPFS, simply put, is file-distributed storage storage. For more information, check the url below.   
+IPFS, simply put, is file-distributed storage. For more information, check the url below.   
 https://medium.com/@kblockresearch/8-ipfs-interplanetary-file-system-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-1%EB%B6%80-http-web%EC%9D%84-%EB%84%98%EC%96%B4%EC%84%9C-ipfs-web%EC%9C%BC%EB%A1%9C-46382a2a6539
 
 
